@@ -141,3 +141,7 @@ for (var i = 1; i < finances.length; i++) {
 
 console.log("Date:", maxIncreaseDate, ": $" + maxIncrease);
 
+// variables to track the greatest decrease
+var greatestDecrease = 0;
+var greatestDecreaseDate = '';
+
