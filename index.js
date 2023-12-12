@@ -126,3 +126,18 @@ console.log("Average Change: " + averageChange);
 // Initialize variables to track the greatest increase
 var maxIncrease = 0;
 var maxIncreaseDate = '';
+
+// Iterate through the finances array starting from the second element
+for (var i = 1; i < finances.length; i++) {
+  // Calculate the difference between the current month and the previous month
+  var difference = finances[i][1] - finances[i - 1][1];
+
+  // Update the maximum increase if the current difference is greater
+  if (difference > maxIncrease) {
+    maxIncrease = difference;
+    maxIncreaseDate = finances[i][0];
+  }
+}
+
+console.log("Date:", maxIncreaseDate, ": $" + maxIncrease);
+
