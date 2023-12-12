@@ -1,4 +1,12 @@
 # Console-Finances
+
+Table of Contents
+Intro on Challenge
+Link to repo
+Link to URL
+Screenshot of console
+
+
 This challenge was for us to demonstrate our abilities using Javascript to find the the following Variables for Console Finances 
 
 variables:
@@ -13,3 +21,7 @@ current data point
  previous data point
 
  These were all achieved also viewed it on the inspect console which showed all the calculations made. 
+
+ [link to github Console-Finance](https://github.com/GraceEmah17/Console-Finances.git)
+ [link to deployed account] (   )
+ ! 
