@@ -86,21 +86,21 @@ var finances = [
   ['Jan-2017', 138230],
   ['Feb-2017', 671099],
 ];
-// counting the length of months
 var totalMonths = finances.length;
-// out put of total length of months
+
 console.log("Total months: " + totalMonths);
 
 // store the net total
 var netTotal = 0;
 
-
 // finances array and sum up the Profit/Losses
 for (var i = 0; i < finances.length; i++) {
   netTotal += finances[i][1];
 }
+
 // Output the net total
 console.log("Net Total: $" + netTotal);
+
 
 
 // Initialize variables
@@ -115,13 +115,13 @@ for (var i = 1; i < finances.length; i++) {
   // Accumulate the changes
   totalChange += change;
   numChanges++;
-
+}
 
 // Calculate the average change
 var averageChange = totalChange / numChanges;
 
 console.log("Average Change: " + averageChange);
-}
+
 
 // Initialize variables to track the greatest increase
 var maxIncrease = 0;
@@ -141,7 +141,22 @@ for (var i = 1; i < finances.length; i++) {
 
 console.log("Date:", maxIncreaseDate, ": $" + maxIncrease);
 
+
 // variables to track the greatest decrease
 var greatestDecrease = 0;
 var greatestDecreaseDate = '';
+
+// Iterate through the finances array starting from the second element
+for (var i = 1; i < finances.length; i++) {
+  // Calculate the difference between the current month and the previous month
+  var decrease = finances[i][1] - finances[i - 1][1];
+
+  // Update the greatest decrease if the current decrease is smaller
+  if (decrease < greatestDecrease) {
+    greatestDecrease = decrease;
+    greatestDecreaseDate = finances[i][0];
+  }
+}
+
+console.log("Date:", greatestDecreaseDate, ": $" + greatestDecrease);
 
