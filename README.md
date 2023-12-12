@@ -23,5 +23,7 @@ current data point
  These were all achieved also viewed it on the inspect console which showed all the calculations made. 
 
  [link to github Console-Finance](https://github.com/GraceEmah17/Console-Finances.git)
- [link to deployed account] (   )
- ! 
+
+ [link to deployed account](https://graceemah17.github.io/Console-Finances/)
+ 
+ ![screenshot of console page.](images/console-finance.png)
