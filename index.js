@@ -99,3 +99,20 @@ var netTotal = 0;
 for (var i = 0; i < finances.length; i++) {
   netTotal += finances[i][1];
 }
+// Output the net total
+console.log("Net Total: $" + netTotal);
+
+
+// Initialize variables
+var totalChange = 0;
+var numChanges = 0;
+
+// Loop through the array starting from the second element
+for (var i = 1; i < finances.length; i++) {
+  // Calculate the change in Profit/Loss
+  var change = finances[i][1] - finances[i - 1][1];
+
+  // Accumulate the changes
+  totalChange += change;
+  numChanges++;
+}
