@@ -26,4 +26,4 @@ current data point
 
  [link to deployed account](https://graceemah17.github.io/Console-Finances/)
  
- ![screenshot of console page.](images/console-finance.png)
+ ![screenshot of console page.](images/Console-Finance.png)
