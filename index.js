@@ -86,3 +86,8 @@ var finances = [
   ['Jan-2017', 138230],
   ['Feb-2017', 671099],
 ];
+// counting the length of months
+var totalMonths = finances.length;
+// out put of total length of months
+console.log("Total months: " + totalMonths);
+
