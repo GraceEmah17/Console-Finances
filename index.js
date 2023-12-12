@@ -91,3 +91,11 @@ var totalMonths = finances.length;
 // out put of total length of months
 console.log("Total months: " + totalMonths);
 
+// store the net total
+var netTotal = 0;
+
+
+// finances array and sum up the Profit/Losses
+for (var i = 0; i < finances.length; i++) {
+  netTotal += finances[i][1];
+}
