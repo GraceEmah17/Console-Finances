@@ -115,4 +115,14 @@ for (var i = 1; i < finances.length; i++) {
   // Accumulate the changes
   totalChange += change;
   numChanges++;
+
+
+// Calculate the average change
+var averageChange = totalChange / numChanges;
+
+console.log("Average Change: " + averageChange);
 }
+
+// Initialize variables to track the greatest increase
+var maxIncrease = 0;
+var maxIncreaseDate = '';
